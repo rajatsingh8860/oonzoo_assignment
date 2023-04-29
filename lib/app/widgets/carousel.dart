@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:oonzoo_assignment/app/utils/cached_image.dart';
 import 'package:oonzoo_assignment/app/widgets/photo_view.dart';
 
 class CarouselWidget extends StatelessWidget {
@@ -15,12 +16,16 @@ class CarouselWidget extends StatelessWidget {
                   onTap: () {
                     Get.to(FullPhotoWidget(imageLink: item));
                   },
-                  child: Container(
-                      decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    image: DecorationImage(
-                        image: NetworkImage(item), fit: BoxFit.cover),
-                  )),
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: SizedBox(
+                        width: Get.width,
+                        child: CachedImage(
+                          imageUrl: item,
+                          height: 180.0,
+                          width: Get.width * 0.80,
+                        ),
+                      )),
                 ))
             .toList(),
         options: CarouselOptions(

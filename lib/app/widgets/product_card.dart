@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:oonzoo_assignment/app/utils/cached_image.dart';
 import 'package:oonzoo_assignment/app/utils/strings.dart';
 
 import '../routes/app_pages.dart';
@@ -29,9 +30,10 @@ class ProductCard extends StatelessWidget {
               borderRadius: const BorderRadius.all(
                 Radius.circular(10.0),
               ),
-              child: Image.network(
-                imageLink,
-                fit: BoxFit.cover,
+              child: CachedImage(
+                imageUrl: imageLink,
+                height: Get.height * 0.25,
+                width: Get.width * 0.50,
               ),
             ),
             const Padding(
