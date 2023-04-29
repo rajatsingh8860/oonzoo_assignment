@@ -1,0 +1,44 @@
+class Strings{
+
+  static const login =  "Login";
+  static const email = "Email";
+  static const enterEmail = "Enter email";
+  static const password = "Password";
+  static const enterPassword = "Enter Password";
+  static const passwordDescription = "Password must be at least 8 characters long with 1 Uppercase, 1 Lowercase & 1 Numeric character.";
+  static const newToFirstCry = "New to FirstCry? Register Here";
+  static const register = "Register";
+  static const fullName = "Full Name";
+  static const enterFullName =  "Enter your full name";
+  static const mobileNumber = "Mobile Number";
+  static const enterMobileNumber = "Enter mobile number";
+  static const cart = "Cart";
+  static const heading = "A Classic Never Goes Out Of Style | 2 - 12Y";
+  static const subHeading = "Frocks , Dresees & More";
+  static const holaBonita = "Hola Bonita Single & Ruffle Shoulder Knit Dress - Pink";
+  static const productId = "Product ID: 11293028";
+  static const price = "Rs. 468.33";
+  static const discountPrice = "MRP: Rs.699.00";
+  static const off = "(33% OFF)";
+  static const size = "SIZE";
+  static const materialAndCare = "MATERIAL & CARE INFORMATION";
+  static const productMaterial = "Product Material";
+  static const cotton = "Cotton";
+  static const sizeAndFit = "SIZE & FIT INFORMATION";
+  static const inches = "Inches";
+  static const cm = "CM";
+  static const age = "Age";
+  static const length = "Length";
+  static const shoulder = "Shoulder";
+  static const chest = "Chest";
+  static const brandInformation = "BRAND INFORMATION";
+  static const productDescription = "PRODUCT DESCRIPTION";
+  static const brand = "Brand - Hola Bonita";
+  static const type = "Type - Frock";
+  static const fabric = "Fabric - Cotton/Knit";
+  static const sleeves = "Sleeves - Single shoulder";
+  static const neck = "Neck - Round";
+  static const brandDescription =  '''Hola bonita is a brand which offers an assortment of girls dresses for the age group of 1-10 yrs Unique fashion dresses, essential day wear and elegant party wear these dresses are perfect for casual outings to the mall, birthday parties and family visits.''';
+  static const addToCart = "ADD TO CART";
+  static const shortList = "SHORTLIST";
+}
